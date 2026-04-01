@@ -2,7 +2,13 @@ echo [Thl Created By Blueskyteam] [Repo in Abril 2026]
 sleep 2
 echo [*] Creating Module SH...
 cat <<EOF>> $PREFIX/bin/Thl
-echo mod in production... [massage in abril 2026]
+echo [*] Allow him to do what he commands.
+sleep 3
+termux-setup-storage
+sleep 2
+mkdir /sdcard/Thl
+mkdir /sdcard/Thl/cache
+mkdir /sdcard/Thl/files
 EOF
 sleep 5
 echo [*] Adding execute permission...
