@@ -1,6 +1,11 @@
 echo [Thl Created By Blueskyteam] [Repo in Abril 2026]
 sleep 2
 echo [*] Creating Module SH...
+sleep 1
+echo [*] in case exists file, delete file
+sleep 2
+rm -rf $PREFIX/bin/Thl2>/dev/null
+sleep 1
 cat <<EOF>> $PREFIX/bin/Thl
 echo [*] Allow him to do what he commands.
 sleep 3
