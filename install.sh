@@ -4,3 +4,8 @@ echo [*] Creating Module SH...
 cat <<EOF>> $PREFIX/bin/Thl
 echo mod in production... [massage in abril 2026]
 EOF
+sleep 5
+echo [*] Adding execute permission...
+chmod +x $PREFIX/bin/Thl
+sleep 1
+echo [*] Installed!
