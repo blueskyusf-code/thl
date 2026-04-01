@@ -15,7 +15,7 @@ echo "[*] Personalizing terminal..."
 read -p "What Your Name?: " name
 echo "clear" >> ~/.bashrc
 echo "echo [Blueskyteam Plugin]" >> ~/.bashrc
-echo "export PS1=\"MakT@\$name \$ \"" >> ~/.bashrc
+echo "export PS1=\"\$name@MakT \$ \"" >> ~/.bashrc
 exec bash
 EOF
 
