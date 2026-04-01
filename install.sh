@@ -9,3 +9,5 @@ echo [*] Adding execute permission...
 chmod +x $PREFIX/bin/Thl
 sleep 1
 echo [*] Installed!
+sleep 2
+echo [Note] Type Thl to run.
