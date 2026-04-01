@@ -13,9 +13,8 @@ echo [*] Allow him to do what he commands.
 sleep 3
 termux-setup-storage
 sleep 2
-mkdir /sdcard/Thl2>/dev/null
-mkdir /sdcard/Thl/cache 2>/dev/null
-mkdir /sdcard/Thl/files 2>/dev/null
+cat <<EOF>> ~/.bashrc
+export PS1="terminal@user"
 EOF
 sleep 5
 echo [*] Adding execute permission...
