@@ -14,26 +14,28 @@ read -p "What Your Name?: " name
 read -p "What's your favorite color?: " color
 
 case $color in
-    gray) col="\[\e[1;30m\]"; bg_col="\[\e[0;30m\]" ;;
-    "light blue") col="\[\e[1;36m\]"; bg_col="\[\e[0;36m\]" ;;
-    "dark blue") col="\[\e[1;34m\]"; bg_col="\[\e[0;34m\]" ;;
-    white) col="\[\e[1;37m\]"; bg_col="\[\e[0;37m\]" ;;
-    purple) col="\[\e[1;35m\]"; bg_col="\[\e[0;35m\]" ;;
-    pink) col="\[\e[1;35m\]"; bg_col="\[\e[0;35m\]" ;;
-    violet) col="\[\e[1;35m\]"; bg_col="\[\e[0;35m\]" ;;
-    red) col="\[\e[1;31m\]"; bg_col="\[\e[0;31m\]" ;;
-    yellow) col="\[\e[1;33m\]"; bg_col="\[\e[0;33m\]" ;;
-    orange) col="\[\e[1;33m\]"; bg_col="\[\e[0;33m\]" ;;
-    "calm blue") col="\[\e[1;36m\]"; bg_col="\[\e[0;36m\]" ;;
-    *) col="\[\e[1;37m\]"; bg_col="\[\e[0;37m\]" ;;
+    cinza) col="\[\033[1;30m\]" ;;
+    azul-claro) col="\[\033[1;36m\]" ;;
+    azul-escuro) col="\[\033[0;34m\]" ;;
+    branco) col="\[\033[1;37m\]" ;;
+    roxo) col="\[\033[0;35m\]" ;;
+    rosa) col="\[\033[1;35m\]" ;;
+    violeta) col="\[\033[1;35m\]" ;;
+    vermelho) col="\[\033[1;31m\]" ;;
+    amarelo) col="\[\033[1;33m\]" ;;
+    laranja) col="\[\033[0;33m\]" ;;
+    azul-calmo) col="\[\033[0;36m\]" ;;
+    *) col="\[\033[1;37m\]" ;;
 esac
 
-reset="\[\e[0m\]"
+reset="\[\033[0m\]"
 
+# Configura o prompt permanentemente
 echo "clear" >> ~/.bashrc
 echo "echo [Blueskyteam Plugin]" >> ~/.bashrc
-# O Nome fica com 'col' (vibrante) e o @MakT fica com 'bg_col' (versão mais escura/cinza)
-echo "export PS1=\"$col\$name$bg_col@MakT$reset \$ \"" >> ~/.bashrc
+echo "export PS1=\"$col\$name$reset@MakT \$ \"" >> ~/.bashrc
+
+# Aplica a mudança na sessão atual
 exec bash
 EOF
 
