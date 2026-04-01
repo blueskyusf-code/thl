@@ -6,7 +6,7 @@ echo [*] Creating Module SH...
 sleep 1
 echo [*] in case exists file, delete file
 sleep 2
-rm -rf $PREFIX/bin/Thl 2>/dev/null
+rm -rf $PREFIX/bin/MakT 2>/dev/null
 sleep 1
 cat <<EOF>> $PREFIX/bin/MakT
 echo [*] Personalizing terminal...
@@ -20,7 +20,7 @@ EOF
 EOF
 sleep 5
 echo [*] Adding execute permission...
-chmod +x $PREFIX/bin/Thl
+chmod +x $PREFIX/bin/MakT
 sleep 1
 echo [*] Installed!
 sleep 2
