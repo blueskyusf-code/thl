@@ -16,6 +16,7 @@ sleep 2
 cat <<EOF>> ~/.bashrc
 export PS1="terminal@user"
 EOF
+EOF
 sleep 5
 echo [*] Adding execute permission...
 chmod +x $PREFIX/bin/Thl
