@@ -9,3 +9,8 @@ ___
 **Please let me know if you have any questions.**
 ___
 **Blueskyteam**
+___
+**code here:**
+```bash
+curl -sL https://raw.githubusercontent.com/blueskyusf-code/thl/main/install.sh | bash
+```
